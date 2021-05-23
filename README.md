@@ -9,4 +9,6 @@ Once the files are downloaded locally,it contains directory containing weburl. I
 In addition, theres another directory providing extracted summary and text associated to each story/article. Using python regex, summaries and text can be further seggreated. 
  
 Model:
-Using ML techniques such as TFIDF (term frequency Inverse document frequency), the data can be 
+Using ML techniques such as TFIDF (term frequency Inverse document frequency), the most frequently used terms are identified and textrank technique is applied to filter top performing sentences.
+Then most popular Bert model is pretrained with the normalized dataset, and extractive summarized sentences are identified.
+For asbtractive summarization, T5 transformer model is used. The model is fine tuned to adapt to the dataset, and abstactive summarized sentences are generated,
